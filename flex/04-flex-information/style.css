@@ -24,3 +24,40 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* solution */
+ /* All items are centered on the page (horizontally, not vertically).
+     The title is centered on the page. */
+.contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.title {
+   /* There is 32px between the title and the 'items.' */
+  margin-bottom: 32px;
+}
+
+.items-texts {
+  display: flex;
+  justify-content: center;
+  /* There is 52px between each item. */
+  gap: 52px;
+}
+
+.barberry, 
+.chili,
+.pepper, 
+.saffron {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  /* The items are only 200px wide */
+  width: 200px;
+}
+
+.text {
+  /* The item text is centered. */
+  text-align: center;
+}
